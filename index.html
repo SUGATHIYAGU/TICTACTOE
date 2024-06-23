@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>TIC TAC TOE </title>
+</head>
+<body>
+    <!---------------------------------MENU SECTION-------------------------------->
+    <section class="menu" id="menu">
+        <h1>TIC TAC TOE</h1>
+        <h2>CHOOSE YOUR CHOICE</h2>
+        <button id="player-vs-player-btn">PLAYER VS PLAYER</button>
+        <button id="computer-vs-player-btn">COMPUTER VS PLAYER</button>
+    </section>
+
+<!---------------------------------PLAYERS SECTION-------------------------------->
+
+    <section class="player-vs-player" id="player-vs-player" style="display:none;">
+        <h1>ENTER PLAYERS NAME</h1>
+        <input type="text" id="player-1-name" placeholder="Enter Player 1 Name">
+        <input type="text" id="player-2-name" placeholder="Enter Player 2 Name">
+        <div id="player-name-error"></div>
+        <div class="btn-btn">
+            <button id="player-back-button">BACK</button>
+            <button id="start-players-btn">START</button>
+        </div>
+    </section>
+
+<!---------------------------------PLAYER VS COMPUTER SECTION-------------------------------->
+
+
+<section class="computer-vs-player" id="computer-vs-player" style="display:none;">
+    <h1>ENTER PLAYER NAME</h1>
+    <input type="text" id="player-name" placeholder="Enter Player Name">
+    <div id="computer-name-error"></div>
+    <div class="btn-btn">
+       <button id="computer-back-button">BACK</button>
+       <button id="start-computer-btn">START</button>
+    </div>
+</section>
+
+
+
+<!---------------------------------BOARD SECTION-------------------------------->
+
+
+<section class="Board-game" id="Board-game" style="display:none;">
+    <div class="Turn-container">
+        <h4>TURN</h4>
+        <div class="Turn-Grid grid-data">X</div>
+        <div class="Turn-Grid grid-data">O</div>
+        <div class="Turn-Grid-bg"></div>
+    </div>
+    <div class="Board" id="Board">
+        <div class="cell" cell-data></div>
+        <div class="cell" cell-data></div>
+        <div class="cell" cell-data></div>
+        <div class="cell" cell-data></div>
+        <div class="cell" cell-data></div>
+        <div class="cell" cell-data></div>
+        <div class="cell" cell-data></div>
+        <div class="cell" cell-data></div>
+        <div class="cell" cell-data></div>
+    </div>
+    <h1 class="result-text" id="result-text"></h1>
+    <div class="btn-btn">
+          <button id="board-back-button">BACK</button>
+          <button id="reset-button">RESET</button> 
+    </div>
+</section>
+
+<!---------------------------------DISPLAY SECTION-------------------------------->
+
+
+<div class="display-box-class" id="display-box" style="display:none;">
+    <div class="display-content">
+        <h3 id="display-winning-count"></h3>
+        <button id="continue-game">CONTINUE</button>
+        <button id="display-back-button">BACK</button>
+    </div>
+</div>
+
+<!---------------------------------AUDIO SECTION-------------------------------->
+<audio id="victory" type="audio/mpeg" src="victory.mp3" style="display: none"></audio>
+<audio id="draw" type="audio/mpeg" src="fastheal.mp3" style="display: none"></audio>
+
+<script src="script.js"></script>
+</body>
+</html>

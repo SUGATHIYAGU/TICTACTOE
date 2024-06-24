@@ -33,6 +33,7 @@ button, #reset-button{
 }
 button:hover , #reset-button:hover{
     background-color: rgb(4, 36, 53);
+    box-shadow:0 0 10px;
 }
 .btn-btn{
     display: flex;
